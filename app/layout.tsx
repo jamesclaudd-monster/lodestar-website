@@ -3,8 +3,11 @@ import "./globals.css";
 import SiteShell from "./site-shell";
 
 export const metadata: Metadata = {
-  title: "IUNGO Technology — AI & Software Engineering",
+  title: "LodestarGlobal",
   description: "Global AI, software engineering and digital product delivery.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
