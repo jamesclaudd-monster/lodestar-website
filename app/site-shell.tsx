@@ -7,7 +7,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(false);
   const nav = [{ href: "/", label: "Home" }, { href: "/services", label: "Services" }, { href: "/about", label: "About" }, { href: "/work", label: "Our work" }, { href: "/contact", label: "Contact" }];
   return <>
-    <div className="topline"><span>Global AI & software engineering partner</span><span>China · United States · Brazil · Australia</span></div>
+    <div className="topline"><span>Global AI & software engineering partner</span><span>China · United States · Europe · Brazil · Australia</span></div>
     <header className="header">
       <Link href="/" className="brand" onClick={() => setOpen(false)}><span className="brandmark"><span>✦</span></span><span className="brandname">LodestarGlobal<small>TECHNOLOGY</small></span></Link>
       <nav className={open ? "nav nav-open" : "nav"}>{nav.map(n => <Link key={n.href} href={n.href} onClick={() => setOpen(false)}>{n.label}</Link>)}</nav>
